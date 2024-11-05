@@ -22,6 +22,7 @@ namespace WpfApp1
         public Window1()
         {
             InitializeComponent();
+            image.Visibility = Visibility.Hidden;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -29,6 +30,11 @@ namespace WpfApp1
             MainWindow window = new MainWindow();
             window.Show();
             this.Close();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            image.Visibility = (Visibility) (image.Visibility == 0 ? 1 : 0);
         }
     }
 }

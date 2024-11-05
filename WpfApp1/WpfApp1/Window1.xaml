@@ -6,8 +6,16 @@
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
         Title="Window1" Height="450" Width="800">
-    <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Height="31" Margin="620,307,0,0" VerticalAlignment="Top" Width="57" Click="Button_Click"/>
-
+    <Grid RenderTransformOrigin="0.487,0.497">
+        <Menu HorizontalAlignment="Left" Height="419" VerticalAlignment="Top" Width="792">
+            <MenuItem Header="Navigate">
+                <Button Content="Back" HorizontalAlignment="Left" Height="31" Margin="3
+                        ,3,0,0" VerticalAlignment="Top" Width="96" Click="Button_Click"/>
+                <Button Content="Show Image" HorizontalAlignment="Left" Height="31" VerticalAlignment="Top" Margin="3
+                        ,3,0,0" Width="96" Click="Button_Click_1"/>
+            </MenuItem>
+        </Menu>
+        <Image Name="image" Source="C:\Users\ZolotarevNI\source\repos\WpfApp1\WpfApp1\WpfApp1\lol.jpg" Margin="380,98,191,101">
+        </Image>
     </Grid>
 </Window>

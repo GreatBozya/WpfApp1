@@ -7,8 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="103,314,0,0" VerticalAlignment="Top" Width="75" Height="36" Click="Button_Click"/>
-        <Image Source="C:/Users/ZolotarevNI/source/repos/WpfApp1/WpfApp1/imba.jpg" HorizontalAlignment="Left" Height="273" Margin="0,-1,0,0" VerticalAlignment="Top" Width="639" RenderTransformOrigin="0.5,0.5">
+        <Image Source="C:\Users\ZolotarevNI\source\repos\WpfApp1\WpfApp1\WpfApp1\imba.jpg" HorizontalAlignment="Left" Height="446" Margin="-1,-28,0,0" VerticalAlignment="Top" Width="792" RenderTransformOrigin="0.5,0.5">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -18,5 +17,6 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
+        <Button Content="Start" HorizontalAlignment="Left" Margin="492,319,0,0" VerticalAlignment="Top" Width="75" Height="36" Click="Button_Click"/>
     </Grid>
 </Window>
