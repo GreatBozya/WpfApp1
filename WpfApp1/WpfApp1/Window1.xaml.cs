@@ -25,6 +25,25 @@ namespace WpfApp1
             image.Visibility = Visibility.Hidden;
         }
 
+        public class Images
+        {
+            public string[] images = {
+                @"C:\Users\ZolotarevNI\source\repos\WpfApp1\WpfApp1\WpfApp1\lol.jpg",
+                @"C:\Users\ZolotarevNI\source\repos\WpfApp1\WpfApp1\WpfApp1\stonks.jpg"
+            };
+        }
+
+        public static BitmapImage GetImage(string imageUri)
+        {
+            var bitmapImage = new BitmapImage();
+
+            bitmapImage.BeginInit();
+            bitmapImage.UriSource = new Uri(imageUri, UriKind.RelativeOrAbsolute);
+            bitmapImage.EndInit();
+
+            return bitmapImage;
+        }
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             MainWindow window = new MainWindow();
@@ -35,6 +54,17 @@ namespace WpfApp1
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             image.Visibility = (Visibility) (image.Visibility == 0 ? 1 : 0);
+        }
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            Images images = new Images();
+            image.Source = GetImage(images.images[1]);
+        }
+        private void NextWindow(object sender, RoutedEventArgs e)
+        {
+            Window2 window = new Window2();
+            window.Show();
+            this.Close();
         }
     }
 }

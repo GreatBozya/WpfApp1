@@ -13,6 +13,10 @@
                         ,3,0,0" VerticalAlignment="Top" Width="96" Click="Button_Click"/>
                 <Button Content="Show Image" HorizontalAlignment="Left" Height="31" VerticalAlignment="Top" Margin="3
                         ,3,0,0" Width="96" Click="Button_Click_1"/>
+                <Button Content="Change Image" HorizontalAlignment="Left" Height="31" VerticalAlignment="Top" Margin="3
+                        ,3,0,0" Width="96" Click="Button_Click_2"/>
+                <Button Content="Next Window" HorizontalAlignment="Left" Height="31" Margin="3
+                        ,3,0,0" VerticalAlignment="Top" Width="96" Click="NextWindow"/>
             </MenuItem>
         </Menu>
         <Image Name="image" Source="C:\Users\ZolotarevNI\source\repos\WpfApp1\WpfApp1\WpfApp1\lol.jpg" Margin="380,98,191,101">

@@ -17,6 +17,6 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-        <Button Content="Start" HorizontalAlignment="Left" Margin="492,319,0,0" VerticalAlignment="Top" Width="75" Height="36" Click="Button_Click"/>
+        <Button Content="Start" Background="Yellow" HorizontalAlignment="Left" Margin="492,319,0,0" VerticalAlignment="Top" Width="75" Height="36" Click="Button_Click"/>
     </Grid>
 </Window>
